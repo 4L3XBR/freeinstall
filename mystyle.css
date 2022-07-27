@@ -119,6 +119,7 @@ main{
     top: 80px;
     position: relative;
     display: block;
+    border-radius: 8px;
 }
 
 #cabecalhoMain{
@@ -128,17 +129,12 @@ main{
 }
 
 #cabecalhoMain h1{
-    margin: 40px auto 8px auto;
+    margin: 40px auto 0px auto;
     text-align: center;
     color: #1a1a1a;
-    font-size: 25pt;
+    font-size: 23pt;
 }
-#cabecalhoMain h2{
-    margin: 0 auto;
-    text-align: center;
-    color: #525252;
-    font-weight: 400;
-}
+/*
 #cabecalhoMain::after{
     content: '';
     background-color: #acacac;
@@ -149,11 +145,11 @@ main{
     display: block;
     top: 50px;
     margin: 0 auto;
-}
+}*/
 #cxsection{
     display: block;
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 #cxProgs{
     display: flex;
@@ -162,23 +158,19 @@ main{
     align-items: center;
 }
 .formatProg{
-    box-shadow: 0px 0px 30px #d1d1d1;
+    box-shadow: 0px 0px 30px #bebebe;
     flex: 1 1 auto;
     border-radius: 8px;
-    padding: 18px;
-    margin: 15px;
-    width: 150px;
+    padding: 20px 15px;
+    margin: 10px;
+    width: 100px;
     text-align: center;
 }
 .formatProg h2{
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     margin: auto auto 5px auto;
-}
-.formatProg h3{
-    text-align: left;
-    font-weight: 400;
-    font-size: medium;
+    font-size: 15px ;
 }
 .formatProg img{
     width: 90%;
@@ -188,10 +180,11 @@ main{
     background-color: #0071e3;
     box-shadow: 0px 0px 30px #d1d1d1;
     color: white;
-    padding: 5px 55px;
+    padding: 5px 20px;
     border: none;
     border-radius: 5px;
-    margin: 15px auto 0 auto;
+    position: relative;
+
 }
 footer{
     background-color: #1a1a1a;
