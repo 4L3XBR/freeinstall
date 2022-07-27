@@ -1,9 +1,24 @@
-function tapInProduction() {
-    marcca = prompt('Página em desenvolvimento! Envie uma sugestão:')
+fetch("./baseDeProgs.json")
+.then((resposta) => {
+    return resposta.json();
+})
+.then((dadosProgs)=>{
+    
+        dadosProgs.map((val)=>{
+            var inProgs = document.getElementById('cxProgs')
+                inProgs.innerHTML += `
+                
+                <div class="formatProg" id="progList">
+                    <div id="imgProg">
+                        <img src="`+val.img+`" alt="">
+                    </div>
 
-    if (window.confirm(marcca)) {
-        window.open('https://api.whatsapp.com/send?phone=5562992936607&text='+ marcca);
-      }
-
-}
-
+                    <div id="legendaProg">
+                        <h2>`+val.nome+`</h2>
+                    </div>
+                    <a href="`+val.download+`"><button type="submit">Download</button>
+                </div>
+                
+                `
+            })
+})
