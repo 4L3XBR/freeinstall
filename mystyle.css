@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: productsans;
-    src: url("./Product\ Sans\ Bold.ttf");
+    src: url(Product\ Sans\ Bold.ttf)
 }
 *{
     margin: 0;
